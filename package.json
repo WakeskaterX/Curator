@@ -1,0 +1,28 @@
+{
+  "name": "Curator",
+  "version": "1.0.0",
+  "description": "Web Scraper and Article Collection Scripts",
+  "main": "article_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WakeskaterX/Curator.git"
+  },
+  "author": "Jason Carter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WakeskaterX/Curator/issues"
+  },
+  "homepage": "https://github.com/WakeskaterX/Curator",
+  "devDependencies": {
+    "async": "^1.2.1",
+    "body-parser": "^1.13.1",
+    "casperjs": "^1.1.0-beta3",
+    "express": "^4.13.0",
+    "mongoose": "^4.0.6",
+    "pg": "^4.4.0",
+    "phantomjs": "^1.9.17"
+  }
+}
