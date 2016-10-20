@@ -81,7 +81,7 @@ function getNotes(){
 }
 
 /**
- * Start - This is where we start our Casper Program.  We start with the ESO Age gate, because we MAY or MAY NOT need to pass it, 
+ * Start - This is where we start our Casper Program.  We start with the ESO Age gate, because we MAY or MAY NOT need to pass it,
  *         so intead of testing, we'll just submit to the age gate to validate this session before we start.
  */
 casper.start(age_gate_url);
@@ -90,11 +90,11 @@ casper.start(age_gate_url);
  * Wait for a selector to show before posting.  We want to make sure the page is loaded properly.  Then we post a valid age to the form.
  */
 casper.waitForSelector('#year',function(){
-  this.fillSelectors('form[action="'+age_gate_url+'"]', {'select#year': '1980', 'select#month': '11', 'select#day': '11'}, true);
+  this.fillSelectors('form[action="'+age_gate_url+'"]', {'input#year': '1980', 'input#month': '11', 'input#day': '11'}, true);
 });
 
 /**
- * Then we're going to open our Patch Notes URL which has the list of the latest patch notes.  I did have to add a 1 second wait before 
+ * Then we're going to open our Patch Notes URL which has the list of the latest patch notes.  I did have to add a 1 second wait before
  * accessing the next page to let the POST load properly.  Sometimes Casper was too fast.
  */
 casper.thenOpen(patch_notes_url, function(){
